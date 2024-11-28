@@ -20,3 +20,7 @@ This course consists of 5 3D modeling assignments and 5 3D graphics assignments.
 - Textures
 - Lighting
 - Particle systems
+
+# Results
+
+![](screenshots/toys_night-scene.png)

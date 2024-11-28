@@ -1,2 +1,6 @@
+*.zip
 *.pdf
 !*lab-report*.pdf
+
+.mayaSwatches/
+texture_pack/

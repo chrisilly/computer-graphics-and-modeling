@@ -1,6 +1,7 @@
 *.zip
 *.pdf
 !*lab-report*.pdf
+.vscode/
 
 .mayaSwatches/
 texture_pack/

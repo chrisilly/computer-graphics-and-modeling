@@ -1,0 +1,3 @@
+[submodule "eduRend"]
+	path = eduRend
+	url = https://github.com/cjgribel/eduRend.git

@@ -25,3 +25,21 @@ Correction: It did not automatically apply the generated PNG as a texture onto t
 
 Manually setting the destination cube's texture to the newly generated cubeDiffuse.png worked perfectly fine otherwise.
 
+I followed the [demo](https://play.mau.se/media/t/0_c46ugan0) and its settings.
+
+![textured and untextured cubes](image-1.png)
+
+Still, for some reason when baking, the target cube has way darker materials and textures to the point that you can't see what some sides are supposed to resemble.
+
+
+![diffuse map settings](image.png)
+
+Changing `Transfer in:` to `Object Space` instead of `World Space` fixed it, although some of the target cube's sides are still a smidge darker. *The settings were not identical!* The following screenshot shows the successful settings:
+
+![diffuse map successful settings](image-2.png)
+
+The result:
+
+![diffuse color map](diffuse-color-maps/cubediffuse.png)
+
+![baked diffuse map result](image-3.png)

@@ -2,7 +2,7 @@ Chris Culling
 
 Lab report for **Mod-L3**
 
-17 Dec 2024
+31 Mar 2025
 
 ---
 
@@ -80,4 +80,54 @@ After a while of googling and rummaging around in Hypershade and more, I realise
 
 # Normal map baking
 
-*Under construction...*
+To begin, I added to Torus shapes on top of a cube, combined the meshes, and did a test normal map bake with the settings I *think* is identical to the demo video we were provided.
+
+1. My settings
+
+![My normal map bake settings](image-9.png)
+
+2. Demo video settings
+
+![Demo video normal map bake settings](image-10.png)
+
+## Failed Results
+
+![Failed normal map bake](image-11.png)
+
+The bake did not work. I also tried to use bake after combining simpler shapes (squares) which did not work.
+
+![Failed normal map bake 2](image-12.png)
+
+Even after fiddling with UV mapping and other shapes, I was not able to get the normal map bake showing correctly.
+
+## Successful Results
+
+Extruding and adding details my modifying and tinkering with the cube directly instead of combining meshes to add details worked.
+
+![Before successful normal map bake](image-14.png)
+
+![Successful normal map bake](image-13.png)
+
+For some reason, though, it makes the colours weird on the source cube.
+
+After ensuring that both cubes had the `standard surface` material, the bake gave a better result and did not affect the source cube.
+
+![Most successful normal map bake](image-15.png)
+
+The bigger, outward expanding extrusions did still come out looking weird, though.
+
+I quickly learned this was because they were extruding past the Search Envelope percentage, so to fix this, I tucked them closer to the cube and increased the `Search envelope` percentage to `39%`.
+
+![Ever more most successful normal map bake](image-16.png)
+
+When increasing the UV shell size of the face with the details, the details came out clearer. (See the north-most cube.)
+
+![Normal map bake with increased UV shell](image-17.png)
+
+## Final normal map bake and result
+
+Larger details also worked well, and even the adjusted edge of the source cube (ruining its perfect cubic outline) came out half decent on the bake. Any darkness obscuring the shapes of the cubes in the figures are due to the viewing angle and will give way to the shape when rotating the camera.
+
+![Buckled and dented cube normal map bake](image-18.png)
+
+![Final normal map used](modeling/cubeNormalMap.als.png)

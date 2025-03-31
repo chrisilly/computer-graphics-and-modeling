@@ -1,6 +1,6 @@
 *.zip
 *.pdf
-!*lab-report*.pdf
+# !*lab-report*.pdf
 .vscode/
 
 .mayaSwatches/

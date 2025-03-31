@@ -44,6 +44,26 @@ In order to make the motion more natural, I added an extra frame of the patty st
 
 # 2. Manual Rigging and Skinning
 
+*Import rig, and skin a humanoid mesh.*
+
+I started by creating joints in the core of the model leading up to the neck and head before appending joints for the limbs on it's left side.
+
+![Model with half of its joints](image-29.png)
+
+Then I oriented the joints *to world*.
+
+![Orient joints option box](image-30.png)
+
+Then I went ahead and named my joints.
+
+![joint objects](image-31.png)
+
+Only then did I mirror my joints to match on the other side.
+
+![Mirror Joints option box](image-32.png)
+
+![Complete joint set](image-33.png)
+
 
 
 # 3. Auto-Rigging and Skeletal Animation

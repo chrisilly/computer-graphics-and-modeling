@@ -76,7 +76,7 @@ Then I added Inverse Kinematic handles for the legs.
 
 ![IK handle demo](image-35.png)
 
-I added NURBS circle primitives for my controls on each important joint, alongside some pole vectors for the knees to improve the motion. *Despite the pole vectors and moving the knee joints forward, the leg movement is still a tad alarming when pushed to its limits. I attribute this to the knee joints being so far* ***down,*** *causing a disproportion between the lower and upper leg.* Parenting the pole vectors to the feet instead improved the leg motion significantly.
+I added NURBS circle primitives for my controls on each important joint, alongside some pole vectors for the knees to improve the motion. *Despite the pole vectors and moving the knee joints forward, the leg movement is still a tad alarming when pushed to its limits. I attribute this to the knee joints being so far* ***down,*** *causing a disproportion between the lower and upper leg.* Parenting the pole vectors to the feet instead improved the leg motion significantly. I also froze all appropriate transforms.
 
 ![Rigged model](image-37.png)
 
@@ -88,4 +88,18 @@ When skinning, I noticed an issue where the arms and head did not follow. To fix
 
 # 3. Auto-Rigging and Skeletal Animation
 
+The auto-rig was so fast and very well done... I spent so much time manually rigging. Wow. (I also prepared a white box for our model to pick up.)
 
+What I've learned from the quick-rig is that the way you parent the different controls can really make your model move more or less correctly, and there are different ways or degrees of doing it, depending on your purpose.
+
+1. Resting pose. Keyframed shoulders, wrists, and hip
+
+![Resting standing position with box](image-42.png)
+
+2. The squat. Again, keyframed the shoulders, wrists, and hip.
+
+![Squatting down for the box](image-41.png)
+
+3. Key framed the hip standing up again and key-framed the box's `Translate Y` to match the upward motion of the model
+
+![Final position](image-43.png)

@@ -76,7 +76,15 @@ Then I added Inverse Kinematic handles for the legs.
 
 ![IK handle demo](image-35.png)
 
+I added NURBS circle primitives for my controls on each important joint, alongside some pole vectors for the knees to improve the motion. *Despite the pole vectors and moving the knee joints forward, the leg movement is still a tad alarming when pushed to its limits. I attribute this to the knee joints being so far* ***down,*** *causing a disproportion between the lower and upper leg.* Parenting the pole vectors to the feet instead improved the leg motion significantly.
 
+![Rigged model](image-37.png)
+
+## Skinning
+
+When skinning, I noticed an issue where the arms and head did not follow. To fix this, I undid the `Bind Skin` and made sure to select all objects associated with the model.
+
+![Skinned model in a toppling-over pose](image-39.png)
 
 # 3. Auto-Rigging and Skeletal Animation
 

@@ -46,6 +46,8 @@ In order to make the motion more natural, I added an extra frame of the patty st
 
 *Import rig, and skin a humanoid mesh.*
 
+## Creating joints 
+
 I started by creating joints in the core of the model leading up to the neck and head before appending joints for the limbs on it's left side.
 
 ![Model with half of its joints](image-29.png)
@@ -63,6 +65,16 @@ Only then did I mirror my joints to match on the other side.
 ![Mirror Joints option box](image-32.png)
 
 ![Complete joint set](image-33.png)
+
+## Creating Controls
+
+Moved the knees forward as tipped.
+
+![alt text](image-34.png)
+
+Then I added Inverse Kinematic handles for the legs.
+
+![IK handle demo](image-35.png)
 
 
 

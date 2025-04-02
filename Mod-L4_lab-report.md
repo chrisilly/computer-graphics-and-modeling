@@ -90,16 +90,18 @@ When skinning, I noticed an issue where the arms and head did not follow. To fix
 
 The auto-rig was so fast and very well done... I spent so much time manually rigging. Wow. (I also prepared a white box for our model to pick up.)
 
-What I've learned from the quick-rig is that the way you parent the different controls can really make your model move more or less correctly, and there are different ways or degrees of doing it, depending on your purpose.
+What I've learned from the quick-rig is that the way you parent the different controls can really make your model move more or less correctly, and there are different ways or degrees of doing it, depending on your scope and purpose.
 
-1. Resting pose. Keyframed shoulders, wrists, and hip
+Keyframing the box-carrying animation was about as straight forward as the bouncing ball, except here we only keyframed the hip and wrists, letting the rigging do the rest of the work; letting the legs and arms bend and follow their parent joints/controls.
+
+I key-framed three poses starting with the **resting pose**.
 
 ![Resting standing position with box](image-42.png)
 
-2. The squat. Again, keyframed the shoulders, wrists, and hip.
+Then, **the squat**. Just like with the bouncing ball, I added a few buffer frames, extending the squat about four frames to make it look more natural.
 
 ![Squatting down for the box](image-41.png)
 
-3. Key framed the hip standing up again and key-framed the box's `Translate Y` to match the upward motion of the model
+And finally, the **upright-carrying-box position**. For the box, I simply key-framed the its `Translate Y` to match the upward motion of the model and complete the animation.
 
 ![Final position](image-43.png)
